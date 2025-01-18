@@ -16,6 +16,16 @@ services:
       - nginx
     entrypoint: ["nginx", "-g", "daemon off;"]
 
+  site:
+    image: nginx:1.25.1
+    container_name: site
+    volumes:
+      - ./site/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./site/code:/var/www/html/site:ro
+    networks:
+      - nginx
+    entrypoint: ["nginx", "-g", "daemon off;"]
+
   api-blue: &api
     image: node:18.17
     container_name: api-blue
