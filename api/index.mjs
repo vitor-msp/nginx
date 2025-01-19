@@ -16,7 +16,7 @@ api.get("/", (req, res) => {
 
 api.put("/", (req, res) => {
   console.log(req.body);
-  res.send(response);
+  res.json(response);
 });
 
 api.listen(port, () => console.log(`api started on ${port}`));
