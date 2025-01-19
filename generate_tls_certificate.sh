@@ -6,7 +6,7 @@ SAN_FILE=$2
 openssl genrsa -out ca.key 4096
 openssl req -x509 -new -nodes -key ca.key -sha256 -days 365 -out ca.crt
 
-# # Site Certificate
+# Site Certificate
 openssl genrsa -out server.key 2048
 
 if [ $SAN == "--san" ]; then
