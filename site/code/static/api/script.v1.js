@@ -29,3 +29,10 @@ const testGetBlue = () => processRequest("blue.api.nginx");
 const testGetGreen = () => processRequest("green.api.nginx");
 
 const testPutApi = () => processRequest("api.nginx", "PUT");
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("btn-get-api").onclick = () => testGetApi();
+  document.getElementById("btn-get-blue").onclick = () => testGetBlue();
+  document.getElementById("btn-get-green").onclick = () => testGetGreen();
+  document.getElementById("btn-put-api").onclick = () => testPutApi();
+});
