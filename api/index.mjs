@@ -9,12 +9,12 @@ const response = {
   color,
 };
 
-api.get("/api", (req, res) => {
+api.get("/", (req, res) => {
   console.log(req.headers);
   res.json(response);
 });
 
-api.put("/api", (req, res) => {
+api.put("/", (req, res) => {
   console.log(req.body);
   res.send(response);
 });
