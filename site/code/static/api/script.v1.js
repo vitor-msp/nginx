@@ -6,7 +6,7 @@ const processRequest = async (domain, method = "GET") => {
       body = JSON.stringify({ hello: "world" });
       headers = { "Content-Type": "application/json" };
     }
-    const response = await fetch(`http://${domain}/`, {
+    const response = await fetch(`https://${domain}/`, {
       method,
       headers,
       body,
