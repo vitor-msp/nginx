@@ -1,4 +1,4 @@
-import express from "express";
+import express, { json } from "express";
 import ip from "ip";
 
 const port = 8080;
@@ -8,6 +8,8 @@ const response = {
   ip: ip.address(),
   color,
 };
+
+api.use(json());
 
 api.get("/", (req, res) => {
   console.log(req.headers);

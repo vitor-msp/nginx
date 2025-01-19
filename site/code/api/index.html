@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Api</title>
+    <link rel="stylesheet" href="/static/api/style.v1.css" />
+    <script src="/static/api/script.v1.js"></script>
+  </head>
+
+  <body>
+    <div id="content">
+      <h1>Test Api</h1>
+      <a href="/">Back to home</a>
+
+      <div id="buttons">
+        <button type="button" onclick="testGetApi()">Test GET api.nginx</button>
+
+        <button type="button" onclick="testGetBlue()">
+          Test GET blue.api.nginx
+        </button>
+
+        <button type="button" onclick="testGetGreen()">
+          Test GET green.api.nginx
+        </button>
+
+        <button type="button" onclick="testPutApi()">Test PUT api.nginx</button>
+      </div>
+
+      <p id="result"></p>
+    </div>
+  </body>
+</html>

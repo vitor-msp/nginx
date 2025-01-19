@@ -1,0 +1,9 @@
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#buttons input {
+    cursor: pointer;
+}
